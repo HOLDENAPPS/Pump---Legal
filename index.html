@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>PUMP — Legal</title>
-<meta name="description" content="Legal documents for PUMP — Sets, Time, Track. A mobile workout-logging app.">
+<title>Holden ERP Solutions Inc. — Calgary, Alberta</title>
+<meta name="description" content="Holden ERP Solutions Inc. is an independent software company based in Calgary, Alberta, Canada. Publisher of PUMP — Sets, Time, Track.">
 <style>
   :root {
     --bg: #ffffff; --bg-soft: #f7f7f9; --ink: #181820; --muted: #5d6068;
@@ -18,38 +18,66 @@
   * { box-sizing: border-box; }
   body { margin: 0; background: var(--bg); color: var(--ink);
     font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+  a { color: var(--link); }
+
   header.brand { border-bottom: 1px solid var(--rule); padding: 24px; background: var(--bg-soft); }
-  header.brand .wrap { max-width: 720px; margin: 0 auto; display: flex; align-items: center; gap: 14px; }
-  header.brand .logo { width: 36px; height: 36px; border-radius: 8px; background: #0b0b14;
-    display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
-  header.brand .logo svg { display: block; }
-  header.brand .name { font-weight: 700; letter-spacing: 1px; font-size: 14px; }
-  header.brand .name .pu { color: var(--accent-pink); }
-  header.brand .name .mp { color: var(--accent-lime); }
+  header.brand .wrap { max-width: 720px; margin: 0 auto; }
+  header.brand .name { font-weight: 700; letter-spacing: 1.5px; font-size: 14px; text-transform: uppercase; }
   header.brand .tag { color: var(--muted); font-size: 13px; margin-top: 2px; }
+
   main { max-width: 720px; margin: 0 auto; padding: 40px 24px 80px; }
   h1 { font-size: 28px; line-height: 1.25; margin: 0 0 12px; font-weight: 700; }
-  .lead { color: var(--muted); margin: 0 0 32px; }
+  .lead { color: var(--muted); margin: 0 0 40px; font-size: 17px; }
+  h2 { font-size: 13px; letter-spacing: 1.5px; text-transform: uppercase;
+    color: var(--muted); font-weight: 700; margin: 40px 0 14px; }
+  h2:first-of-type { margin-top: 0; }
+
+  .card { display: block; padding: 18px; background: var(--bg-soft);
+    border: 1px solid var(--rule); border-radius: 10px; color: var(--ink);
+    text-decoration: none; transition: border-color 0.15s; }
+  a.card:hover { border-color: var(--accent-pink); }
   .doc-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 12px; }
-  .doc-list a {
-    display: block; padding: 16px 18px;
-    background: var(--bg-soft); border: 1px solid var(--rule);
-    border-radius: 10px; color: var(--ink); text-decoration: none;
-    transition: border-color 0.15s;
-  }
-  .doc-list a:hover { border-color: var(--accent-pink); }
   .doc-list .title { font-weight: 600; font-size: 17px; margin-bottom: 4px; }
   .doc-list .meta { color: var(--muted); font-size: 13px; }
   .doc-list .arrow { float: right; color: var(--accent-pink); }
+
+  .product { display: flex; gap: 16px; align-items: flex-start; }
+  .product .icon { width: 56px; height: 56px; border-radius: 13px; flex-shrink: 0; overflow: hidden; }
+  .product .icon svg { display: block; width: 56px; height: 56px; }
+  .product .body { flex: 1; min-width: 0; }
+  .product .pname { font-weight: 700; letter-spacing: 1px; font-size: 15px; }
+  .product .pname .pu { color: var(--accent-pink); }
+  .product .pname .mp { color: var(--accent-lime); }
+  .product .pdesc { color: var(--muted); font-size: 14px; margin: 6px 0 10px; }
+  .product .plinks a { font-size: 14px; font-weight: 600; text-decoration: none; }
+  .product .plinks a:hover { text-decoration: underline; }
+
+  .facts { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
+  .facts li { display: flex; gap: 12px; font-size: 15px; flex-wrap: wrap; }
+  .facts .k { color: var(--muted); min-width: 150px; }
+
   footer.foot { border-top: 1px solid var(--rule); padding: 24px;
     text-align: center; color: var(--muted); font-size: 13px; }
 </style>
 </head>
 <body>
+
 <header class="brand">
   <div class="wrap">
-    <div class="logo" aria-hidden="true">
-      <svg viewBox="0 0 1024 1024" width="36" height="36">
+    <div class="name">Holden ERP Solutions Inc.</div>
+    <div class="tag">Calgary, Alberta, Canada</div>
+  </div>
+</header>
+
+<main>
+  <h1>Holden ERP Solutions Inc.</h1>
+  <p class="lead">An independent software company based in Calgary, Alberta. We design and
+  publish mobile applications, built to work offline and to keep your data on your own device.</p>
+
+  <h2>Products</h2>
+  <div class="card product">
+    <div class="icon" aria-hidden="true">
+      <svg viewBox="0 0 1024 1024">
         <rect width="1024" height="1024" rx="220" fill="#0b0b14"/>
         <g transform="translate(287, 142)">
           <path fill="#ff2d87" d="M 0 0 L 125 0 A 85 85 0 0 1 125 170 L 70 170 L 70 340 L 0 340 Z"/>
@@ -64,23 +92,36 @@
         </g>
       </svg>
     </div>
-    <div>
-      <div class="name"><span class="pu">PU</span><span class="mp">MP</span></div>
-      <div class="tag">Sets, Time, Track</div>
+    <div class="body">
+      <div class="pname"><span class="pu">PU</span><span class="mp">MP</span> — Sets, Time, Track</div>
+      <p class="pdesc">A workout logger for the gym floor. Count sets with a single tap, record
+      reps and weight per set, run interval and Tabata timers, log cardio and classes, and track
+      personal bests by equipment type. Free, no account, works entirely offline.</p>
+      <div class="plinks">
+        <a href="https://apps.apple.com/app/id6773154411">Download on the App Store →</a>
+      </div>
     </div>
   </div>
-</header>
-<main>
-  <h1>Legal</h1>
-  <p class="lead">Policies governing the use of PUMP, a workout-logging mobile app.</p>
+
+  <h2>Legal</h2>
   <ul class="doc-list">
-    <li><a href="./privacy.html"><span class="arrow">→</span><div class="title">Privacy Policy</div><div class="meta">How PUMP handles your data (TL;DR: it doesn't leave your device).</div></a></li>
-    <li><a href="./terms.html"><span class="arrow">→</span><div class="title">Terms of Service</div><div class="meta">License, disclaimers, governing law.</div></a></li>
+    <li><a class="card" href="./privacy.html"><span class="arrow">→</span><div class="title">Privacy Policy</div><div class="meta">How PUMP handles your data (TL;DR: it doesn't leave your device).</div></a></li>
+    <li><a class="card" href="./terms.html"><span class="arrow">→</span><div class="title">Terms of Service</div><div class="meta">License, disclaimers, governing law.</div></a></li>
+  </ul>
+
+  <h2>Company</h2>
+  <ul class="facts">
+    <li><span class="k">Legal name</span><span>Holden ERP Solutions Inc.</span></li>
+    <li><span class="k">Incorporated</span><span>Alberta, Canada &middot; 2026</span></li>
+    <li><span class="k">Corporate access no.</span><span>AB-2027776976</span></li>
+    <li><span class="k">Location</span><span>Calgary, Alberta, Canada</span></li>
+    <li><span class="k">Contact</span><span><a href="mailto:adk3213+pump@gmail.com">adk3213+pump@gmail.com</a></span></li>
   </ul>
 </main>
+
 <footer class="foot">
-  Effective May 11, 2026 &nbsp;·&nbsp; Contact: <a href="mailto:adk3213+pump@gmail.com">adk3213+pump@gmail.com</a><br>
-  © 2026 Holden ERP Solutions Inc., Calgary, Alberta, Canada
+  &copy; 2026 Holden ERP Solutions Inc., Calgary, Alberta, Canada
 </footer>
+
 </body>
 </html>
